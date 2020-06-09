@@ -15,8 +15,8 @@ values ('001', 'Prasad', 'prasad@g.com', '000000000000', 'SMS');
 
 insert into CUSTOMER_DETAILS
 (CUSTOMER_ID, NAME, EMAIL, MOBILE_NUMBER, NOTIFICATION_PREFERENCE)
-values ('002', 'Suman', 'sumanshaw1193@gmail.com', '9022310619', 'MAIL');
+values ('002', 'Suman Agarwal', 'sumanshaw1193@gmail.com', '+919022310619', 'MAIL');
 
 insert into CUSTOMER_DETAILS
 (CUSTOMER_ID, NAME, EMAIL, MOBILE_NUMBER, NOTIFICATION_PREFERENCE)
-values ('003', 'Paritosh Agarwal', 'paritosh30sep@gmail.com', '8975941439', 'SMS');
+values ('003', 'Paritosh Agarwal', 'paritosh30sep@gmail.com', '+917875028423', 'SMS');
