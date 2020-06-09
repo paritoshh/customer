@@ -1,11 +1,11 @@
 package com.xyz.customer.utils;
 
 public enum ErrorCodes {
-    CUSTOMER_NOT_FOUND("ER001");
+    CUSTOMER_NOT_FOUND();
     private String errorCode;
 
-    ErrorCodes(String code) {
-        this.errorCode = code;
+    ErrorCodes() {
+        this.errorCode = "ER001";
     }
 
     public String getCode() {

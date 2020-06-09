@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomerDetailsMapper {
 
-    public CustomerDetails mapCustomerEntityToCustomerDetails(CustomerEntity entity){
+    public CustomerDetails mapCustomerEntityToCustomerDetails(CustomerEntity entity) {
         return CustomerDetails.builder()
                 .customerEmail(entity.getCustomerEmail())
                 .customerName(entity.getCustomerName())

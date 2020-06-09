@@ -24,11 +24,10 @@ public class CustomerDetailsServiceImpl implements CustomerDetailsService {
     public CustomerDetails getCustomerDetails(String customerId) {
 
         Optional<CustomerEntity> customerEntity = customerDetailsRepository.findByCustomerId(customerId);
-        if(customerEntity.isPresent()){
+        if (customerEntity.isPresent()) {
             return mapper.mapCustomerEntityToCustomerDetails(customerEntity.get());
-        }
-        else{
-            throw new CustomerNotFoundException("Customer not found for the given customer-id:" +customerId, ErrorCodes.CUSTOMER_NOT_FOUND);
+        } else {
+            throw new CustomerNotFoundException("Customer not found for the given customer-id:" + customerId, ErrorCodes.CUSTOMER_NOT_FOUND);
         }
     }
 }

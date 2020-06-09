@@ -18,7 +18,7 @@ public class CustomerController {
     CustomerDetailsService customerDetailsService;
 
     @GetMapping("/customerId/{customerId}")
-    public ResponseEntity<CustomerDetails> retrieveCustomer(@PathVariable String customerId){
+    public ResponseEntity<CustomerDetails> retrieveCustomer(@PathVariable String customerId) {
         CustomerDetails customerDetails = customerDetailsService.getCustomerDetails(customerId);
         return new ResponseEntity<>(customerDetails, HttpStatus.OK);
     }

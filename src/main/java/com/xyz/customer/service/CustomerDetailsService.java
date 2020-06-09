@@ -4,5 +4,5 @@ import com.xyz.customer.model.CustomerDetails;
 
 public interface CustomerDetailsService {
 
-    public CustomerDetails getCustomerDetails(String customerId);
+    CustomerDetails getCustomerDetails(String customerId);
 }
